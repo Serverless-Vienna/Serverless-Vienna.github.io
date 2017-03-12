@@ -1,14 +1,17 @@
-/* smart phones: */
+body {
+  min-width: 480px;
+}
+
+/* mobiles: */
 @media only screen
-  and (min-device-width: 320px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+  and (min-device-width : 0) {
   body {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .content section {
     width: 90%;
+    min-width: 90%;
   }
 
   footer .right {
@@ -18,14 +21,28 @@
   .collapsible-header {
     padding: 0.5em;
   }
-  h6 {
-    padding: 0.5em 0;
-  }
+
 }
 
-body {
-  font-size: 1.5em;
+/* desktops */
+@media only screen
+  and (min-device-width: 1281px) {
+    body {
+      font-size: 1em;
+    }
+
+    .content section {
+      width: 50%;
+      min-width: 420px;
+    }
+
+    footer .right {
+      float: right !important;
+    }
 }
+/*body {
+  font-size: 1.5em;
+}*/
 
 header, footer {
   margin: 10px;
@@ -33,11 +50,14 @@ header, footer {
 
 header h3 {
   font-size: 1.5em;
+  color: #44AA33;
+  font-weight: bold;
 }
 
 h6 {
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 1.1em;
+  padding: 0.5em 0;
 }
 
 footer {
@@ -56,15 +76,44 @@ section>ul {
   margin-left: 0.5em !important;
 }
 
-.content section {
-  width: 50%;
-  min-width: 560px;
-}
-
 div.collapsible-body ul, div.collapsible-body ul li {
   list-style-type: circle;
 }
 
 div.collapsible-body {
   padding: 1em 4em;
+}
+
+/* http://www.lugolabs.com/caret */
+.back-top, .back-left {
+  position: relative;
+}
+
+.back-top:before, .back-left:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 15px solid #44AA33;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.back-right:after, .back-left:after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+}
+
+.back-left:after {
+  border-right: 14px solid #fff;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+}
+
+.back-top:after {
+  border-bottom: 14px solid #fff;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
 }
