@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="../../serverless-vienna.css" type="text/css">
 
   <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
       $('.collapsible').collapsible();
     });
   </script>
@@ -26,10 +26,13 @@
 <body>
 
   <header>
-    <h3>This page contains resources of the 3rd Serverless-Vienna Meetup 2017-03-28</h3>
+    <h3>Coding Session, 3rd Serverless-Vienna Meetup 2017-03-28</h3>
   </header>
 
   <section>
+
+    <p>
+      <h6>Setup</h6></p>
 
     <ul class="collapsible" data-collapsible="expandable">
       <li>
@@ -45,19 +48,8 @@
         <div class="collapsible-header"><i class="material-icons">chevron_right</i>AWS Lambda Prerequisites</div>
         <div class="collapsible-body">
           <ul>
-            <li><a href="https://aws.amazon.com/free‎">Account</a></li>
-            <li><a href="http://docs.aws.amazon.com/lambda/latest/dg/setting-up.html">Administrator</a></li>
+            <li><a href="https://aws.amazon.com/free‎">Account</a> &amp; <a href="http://docs.aws.amazon.com/lambda/latest/dg/setting-up.html">Administrator</a></li>
             <li><a href="http://docs.aws.amazon.com/lambda/latest/dg/setup-awscli.html">CLI Configuration</a></li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header"><i class="material-icons">chevron_right</i>AWS Lambda Examples</div>
-        <div class="collapsible-body">
-          <ul>
-            <li><a href="http://docs.aws.amazon.com/lambda/latest/dg/get-started-create-function.html">Hello World</a></li>
-            <li><a href="https://aws.amazon.com/lambda/getting-started/">Sample Code</a></li>
-            <li><a href="https://aws.amazon.com/documentation/lambda">AWS Lambda Documentation</a></li>
           </ul>
         </div>
       </li>
@@ -71,34 +63,67 @@
         </div>
       </li>
       <li>
-        <div class="collapsible-header"><i class="material-icons">chevron_right</i>IBM OpenWhisk Examples</div>
-        <div class="collapsible-body">
-          <ul>
-            <li><a href="https://console.ng.bluemix.net/docs/openwhisk/index.html#openwhisk_start_hello_world">Hello World</a></li>
-            <li><a href="https://github.com/openwhisk/openwhisk-external-resources">Samples</a></li>
-            <li><a href="https://console.ng.bluemix.net/docs/openwhisk/index.html">Documentation</a></li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header"><i class="material-icons">chevron_right</i>Microsoft Azure</div>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>Microsoft Azure Functions Prerequisites</div>
         <div class="collapsible-body">
           <ul>
             <li><a href="https://azure.microsoft.com/de-de/free/">Account creation</a></li>
             <li><a href="https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli">CLI Installation &amp; configuration</a></li>
-            <li><a href="https://azure.microsoft.com/en-us/resources/samples/">Examples</a></li>
-            <li><a href="https://docs.microsoft.com/en-us/azure/azure-functions/">Functions Documentation</a></li>
           </ul>
         </div>
       </li>
       <li>
-        <div class="collapsible-header"><i class="material-icons">chevron_right</i>Google Cloud/Firebase</div>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>Google Cloud Functions / Firebase Prerequisites</div>
         <div class="collapsible-body">
           <ul>
             <li><a href="https://cloud.google.com/free/">Account creation</a></li>
             <li><a href="https://cloud.google.com/sdk/">CLI Installation &amp; Configuration</a></li>
-            <li><a href="https://firebase.google.com/">Firebase Realtime Database</a></li>
-            <li><a href="https://firebase.google.com/docs/functions/">Cloud functions</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+    <p>
+      <h6>Examples &amp; Documentation</h6></p>
+    <ul class="collapsible" data-collapsible="expandable">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>AWS Lambda Examples</div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="http://docs.aws.amazon.com/lambda/latest/dg/get-started-create-function.html">Hello World</a></li>
+            <li><a href="https://aws.amazon.com/lambda/getting-started/">Examples</a></li>
+            <li><a href="https://aws.amazon.com/documentation/lambda">Documentation</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>IBM OpenWhisk Examples</div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="https://console.ng.bluemix.net/docs/openwhisk/index.html#openwhisk_start_hello_world">Hello World</a></li>
+            <li><a href="https://github.com/openwhisk/openwhisk-external-resources">Examples</a></li>
+            <li><a href="https://console.ng.bluemix.net/docs/openwhisk/index.html">Documentation</a></li>
+            <li><a href="https://github.com/openwhisk/openwhisk-workshop">Workshop</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>Microsoft Azure Functions Examples</div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function">Hello World</a></li>
+            <li><a href="https://azure.microsoft.com/en-us/resources/samples/?service=functions">Examples</a></li>
+            <li><a href="https://docs.microsoft.com/en-us/azure/azure-functions/">Documentation</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>Google Cloud Functions / Firebase Examples</div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="https://cloud.google.com/functions/docs/quickstart">Hello World</a></li>
+            <li><a href="https://cloud.google.com/functions/docs/tutorials/">Examples</a></li>
+            <li><a href="https://codelabs.developers.google.com/codelabs/firebase-cloud-functions/index.html">Firebase Chat with Functions</a></li>
+            <li><a href="https://cloud.google.com/functions/docs/">Functions</a> &amp; <a href="https://firebase.google.com/docs/functions/">Firebase Functions Documentation</a></li>
           </ul>
         </div>
       </li>
@@ -108,15 +133,21 @@
 
 
   <section>
-    <p><b>Some ideas</b></p>
     <p>
-      <ul>
-        <li>Shopping List</li>
-        <li>Blog</li>
-        <li>Todos</li>
-        <li>Chat</li>
-      </ul>
-    </p>
+      <h6>Challenges</h6></p>
+    <ul class="collapsible" data-collapsible="expandable">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>Some Ideas ...</div>
+        <div class="collapsible-body">
+          <ul>
+            <li>Shopping List</li>
+            <li>Blog</li>
+            <li>Todos</li>
+            <li>Chat</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
   </section>
 
   <footer>
