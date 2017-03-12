@@ -1,3 +1,7 @@
+body {
+  font-size: 1em;
+}
+
 header, footer {
   margin: 10px;
 }
@@ -8,6 +12,7 @@ header h3 {
 
 h6 {
   font-weight: bold;
+  font-size: 0.9em;
 }
 
 footer {
@@ -28,7 +33,6 @@ section>ul {
 
 .content {
   width: 50%;
-  min-width: 440px;
 }
 
 div.collapsible-body ul, div.collapsible-body ul li {
@@ -37,4 +41,16 @@ div.collapsible-body ul, div.collapsible-body ul li {
 
 div.collapsible-body {
   padding: 1em 4em;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    font-size: 1.6em;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 708px;
+  }
 }
