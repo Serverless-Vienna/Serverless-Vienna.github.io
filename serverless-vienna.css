@@ -31,8 +31,9 @@ section>ul {
   margin-left: 0.5em !important;
 }
 
-.content {
+.content section {
   width: 50%;
+  min-width: 400px;
 }
 
 div.collapsible-body ul, div.collapsible-body ul li {
@@ -43,7 +44,10 @@ div.collapsible-body {
   padding: 1em 4em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
   /* For mobile phones: */
   body {
     font-size: 1.6em;
@@ -51,6 +55,10 @@ div.collapsible-body {
 
   .content {
     width: 100%;
-    max-width: 708px;
+    max-width: 607px;
+  }
+
+  footer .right {
+    float: left !important;
   }
 }
