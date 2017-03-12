@@ -44,9 +44,9 @@ div.collapsible-body {
   padding: 1em 4em;
 }
 
-/* iphone 5s: */
+/* smart phones: */
 @media only screen
-  and (max-device-width: 568px)
+  and (min-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
   body {
