@@ -4,15 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Serverless-Vienna 3rd Meetup Github Page</title>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 
   <!-- Compiled and minified JavaScript -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
   <link rel="stylesheet" href="../../serverless-vienna.css" type="text/css">
 
+  <script>
+    $(document).ready(function () {
+      $('.collapsible').collapsible();
+    });
+  </script>
 </head>
 
 <body>
@@ -22,54 +30,94 @@
   </header>
 
   <section>
-    <p><b>Global Prerequisites</b></p>
+
+    <ul class="collapsible" data-collapsible="expandable">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>Common Prerequisites</div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="https://nodejs.org/dist/latest-v6.x/">node 6.x</a></li>
+            <li>Git as well as a Code Editor or IDE, e.g. atom, visual studio code, emacs, vi,...</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>AWS Lambda Prerequisites</div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="https://aws.amazon.com/free‎">Account</a></li>
+            <li><a href="http://docs.aws.amazon.com/lambda/latest/dg/setting-up.html">Administrator</a></li>
+            <li><a href="http://docs.aws.amazon.com/lambda/latest/dg/setup-awscli.html">CLI Configuration</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>AWS Lambda Examples</div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="http://docs.aws.amazon.com/lambda/latest/dg/get-started-create-function.html">Hello World</a></li>
+            <li><a href="https://aws.amazon.com/lambda/getting-started/">Sample Code</a></li>
+            <li><a href="https://aws.amazon.com/documentation/lambda">AWS Lambda Documentation</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>IBM OpenWhisk Prerequisites</div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="https://console.ng.bluemix.net/registration/?target=/openwhisk">Account</a></li>
+            <li><a href="https://github.com/openwhisk/openwhisk/blob/master/docs/cli.md">CLI Installation</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>IBM OpenWhisk Examples</div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="https://console.ng.bluemix.net/docs/openwhisk/index.html#openwhisk_start_hello_world">Hello World</a></li>
+            <li><a href="https://github.com/openwhisk/openwhisk-external-resources">Samples</a></li>
+            <li><a href="https://console.ng.bluemix.net/docs/openwhisk/index.html">Documentation</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>Microsoft Azure</div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="https://azure.microsoft.com/de-de/free/">Account creation</a></li>
+            <li><a href="https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli">CLI Installation &amp; configuration</a></li>
+            <li><a href="https://azure.microsoft.com/en-us/resources/samples/">Examples</a></li>
+            <li><a href="https://docs.microsoft.com/en-us/azure/azure-functions/">Functions Documentation</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>Google Cloud/Firebase</div>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="https://cloud.google.com/free/">Account creation</a></li>
+            <li><a href="https://cloud.google.com/sdk/">CLI Installation &amp; Configuration</a></li>
+            <li><a href="https://firebase.google.com/">Firebase Realtime Database</a></li>
+            <li><a href="https://firebase.google.com/docs/functions/">Cloud functions</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+  </section>
+
+
+  <section>
+    <p><b>Some ideas</b></p>
     <p>
       <ul>
-        <li><a href="#">npm 6.x</a></li>
-        <li><a href="#">optional: nvm</a></li>
-      </ul>
-    </p>
-    <p><b>AWS Prerequisites</b></p>
-    <p>
-      <ul>
-        <li><a href="https://aws.amazon.com/free‎">AWS Account</a></li>
-        <li><a href="https://docs.aws.amazon.com/cli/latest/userguide/installing.html">AWS CLI Installation</a></li>
-        <li><a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html">AWS CLI Configuration</a></li>
-      </ul>
-    </p>
-    <p><b>AWS Examples</b></p>
-    <p>
-      <ul>
-        <li><a href="https://aws.amazon.com/lambda/getting-started/">AWS Lambda Getting Started</a></li>
-        <li><a href="https://aws.amazon.com/documentation/lambda">AWS Lambda Documentation</a></li>
-      </ul>
-    </p>
-    <p><b>Google Cloud</b></p>
-    <p>
-      <ul>        
-        <li><a href="https://cloud.google.com/free/">Account creation</a></li>
-        <li><a href="https://cloud.google.com/sdk/">CLI Installation &amp; Configuration</a></li>
-        <li><a href="https://firebase.google.com/">Firebase Realtime Database</a></li>
-        <li><a href="https://firebase.google.com/docs/functions/">Cloud functions</a></li>
-      </ul>
-    </p>
-    <p><b>IBM Open Whisk</b></p>
-    <p>
-      <ul>
-        <li><a href="./Meetup2_20170215_OrganizationalSlides/index.html">Meetup#2 Slides: Orga &amp; News</a></li>
-      </ul>
-    </p>
-    <p><b>Microsoft Azure</b></p>
-    <p>
-      <ul>
-        <li><a href="https://azure.microsoft.com/de-de/free/">Account creation</a></li>
-        <li><a href="https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli">CLI Installation &amp; configuration</a></li>
-        <li><a href="https://azure.microsoft.com/en-us/resources/samples/">Examples</a></li>
-        <li><a href="https://docs.microsoft.com/en-us/azure/azure-functions/">Functions Documentation</a></li>
+        <li>Shopping List</li>
+        <li>Blog</li>
+        <li>Todos</li>
+        <li>Chat</li>
       </ul>
     </p>
   </section>
-
 
   <footer>
     <div class="left">
@@ -79,6 +127,8 @@
       <a href="../../index.html">Back to Serverless-Vienna Main</a>
     </div>
   </footer>
+
+
 
 </body>
 

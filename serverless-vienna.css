@@ -17,3 +17,14 @@ footer a {
 section {
   margin: 10px 30px;
 }
+
+ul.collapsible {
+  width: 50%;
+}
+div.collapsible-body ul, div.collapsible-body ul li {
+  list-style-type: circle;
+}
+
+div.collapsible-body {
+  padding: 1em 4em;
+}
