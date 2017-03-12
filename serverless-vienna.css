@@ -22,9 +22,15 @@ section {
   margin: 10px 30px;
 }
 
-ul.collapsible {
-  width: 50%;
+section>ul {
+  margin-left: 0.5em !important;
 }
+
+.content {
+  width: 50%;
+  min-width: 440px;
+}
+
 div.collapsible-body ul, div.collapsible-body ul li {
   list-style-type: circle;
 }
