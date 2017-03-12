@@ -76,6 +76,10 @@ section>ul {
   margin-left: 0.5em !important;
 }
 
+div.collapsible-body {
+  background-color: #efe;
+}
+
 div.collapsible-body ul, div.collapsible-body ul li {
   list-style-type: circle;
 }
