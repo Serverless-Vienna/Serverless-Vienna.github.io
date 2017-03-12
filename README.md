@@ -1,5 +1,5 @@
 ﻿# Serverless-Vienna.github.io
 
-### AWS CLI Reference
+### HTML Version
 
-http://docs.aws.amazon.com/cli/latest/reference/
+https://serverless-vienna.github.io/
