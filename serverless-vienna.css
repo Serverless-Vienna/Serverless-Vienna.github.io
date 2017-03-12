@@ -50,7 +50,7 @@ div.collapsible-body {
   and (orientation: portrait) {
   /* For mobile phones: */
   body {
-    font-size: 1.6em;
+    font-size: 3em;
   }
 
   .content {
