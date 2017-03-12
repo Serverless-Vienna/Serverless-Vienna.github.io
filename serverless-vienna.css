@@ -1,5 +1,30 @@
+/* smart phones: */
+@media only screen
+  and (min-device-width: 320px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  body {
+    font-size: 3em;
+  }
+
+  .content section {
+    width: 90%;
+  }
+
+  footer .right {
+    float: left !important;
+  }
+
+  .collapsible-header {
+    padding: 0.5em;
+  }
+  h6 {
+    padding: 0.5em 0;
+  }
+}
+
 body {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 header, footer {
@@ -33,7 +58,7 @@ section>ul {
 
 .content section {
   width: 50%;
-  min-width: 400px;
+  min-width: 560px;
 }
 
 div.collapsible-body ul, div.collapsible-body ul li {
@@ -42,29 +67,4 @@ div.collapsible-body ul, div.collapsible-body ul li {
 
 div.collapsible-body {
   padding: 1em 4em;
-}
-
-/* smart phones: */
-@media only screen
-  and (min-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-  body {
-    font-size: 3em;
-  }
-
-  .content section {
-    width: 90%;
-  }
-
-  footer .right {
-    float: left !important;
-  }
-
-  .collapsible-header {
-    padding: 0.5em;
-  }
-  h6 {
-    padding: 0.5em 0;
-  }
 }
